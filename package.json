@@ -3,7 +3,7 @@
     "express": "^4.18.3",
     "mysql2": "^3.9.2",
     "sequelize": "^6.37.1"
-  }
+  },
   "name": "recipe-finder",
   "version": "1.0.0",
   "description": "An app to help you find recipes",
