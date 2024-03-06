@@ -1,0 +1,16 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "An app to help you find recipes",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Recipe-Finder"
+  },
+  "author": "group",
+  "license": "ISC"
+}
