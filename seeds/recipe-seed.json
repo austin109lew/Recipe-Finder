@@ -1,1 +1,13 @@
-const sequelize = require('../config/connection');
+[
+    {
+        "name": "PB&J Sandwich",
+        "ingredients": "Bread, peanutbutter, jelly ",
+        "instructions": "Spread peanutbutter and jelly on two pieces of bread. Enjoy!"
+    },
+    {
+        "name": "Pizza",
+        "ingredients": "Pizza dough, pizza sauce, cheese and other desired toppings.", 
+        "instructions": "Preheat oven to 350 degrees. Roll out pizza dough, spread desired amount of sauce, then add cheese and other toppings. Bake for 25 minutes or until crust is golden brown."
+    }
+
+]
