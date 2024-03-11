@@ -1,21 +1,19 @@
 {
-  "dependencies": {
-    "express": "^4.18.3",
-    "mysql2": "^3.9.2",
-    "sequelize": "^6.37.1"
-  },
-  "name": "recipe-finder",
+  "name": "potluck-party",
   "version": "1.0.0",
-  "description": "An app to help you find recipes",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "test",
-    "start": "node server.js"
+    "seeds": "node seeds/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "Recipe-Finder"
-  },
-  "author": "group",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.7.3",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5"
+  }
 }
