@@ -1,65 +1,47 @@
 <div class="menu-container">
   <div class="card-header col-md-12 text-center">
     <h2>
-      &#127869 Current Menu
+      &#127869 Feast Finder Menu
     </h2>
   </div>
-  {{#each dishes as |dish|}}
-  <div class="dish col-md-4">
+  {{#each recipes}}
+  <div class="recipe col-md-4">
     <p>
-      {{dish.id}}.
-      {{dish.dish_name}}
+      {{this.name}}
     </p>
   </div>
   <div class="col-md-5">
     <p>
-      Guest:
-      {{dish.guest_name}}
+      Ingredients: {{this.ingredients}}
     </p>
   </div>
   <div class="col-md-3">
-    🥜: {{#if dish.has_nuts}} Contains nuts {{else}} No nuts {{/if}}
+    🥜: {{#if this.has_nuts}} Contains nuts {{else}} No nuts {{/if}}
   </div>
   {{/each}}
-  <!-- This is the form for adding a new dish -->
-  <div class="add-dish-container">
+  <!-- This is the form for adding a new recipe -->
+  <div class="add-recipe-container">
     <h2>
-      RSVP with the dish you plan to bring!
+      Share Your Recipe!
     </h2>
-    <form class="new-dish-form">
-      <label for="dish_name">
-        Dish Name:
+    <form class="new-recipe-form">
+      <label for="recipe_name">
+        Recipe Name:
       </label>
       <br />
-      <textarea id="dish_name" name="dish_name" rows="2" cols="30">
-      {{dish_name}}
-    </textarea>
+      <textarea id="recipe_name" name="recipe_name" rows="2" cols="30"></textarea>
       <br />
-      <label for="description">
-        Description:
+      <label for="ingredients">
+        Ingredients:
       </label>
       <br />
-      <textarea id="description" name="description" rows="5" cols="30">
-      {{description}}
-    </textarea>
+      <textarea id="ingredients" name="ingredients" rows="5" cols="30"></textarea>
       <br />
-      <label for="guest_name">
-        Guest Name:
-      </label>
-      <br />
-      <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
-    </textarea>
-      <br />
-      <br />
-      {{#if has_nuts}}
-      <input type="checkbox" id="has_nuts" name="has_nuts" checked />
-      {{else}}
-      <input type="checkbox" id="has_nuts" name="has_nuts" />
-      {{/if}}
       <label for="has_nuts">
-        Check box if this dish contains nuts
+        Check box if this recipe contains nuts
       </label>
+      <br />
+      <input type="checkbox" id="has_nuts" name="has_nuts" />
       <br />
       <button type="submit" value="Submit">
         Submit
@@ -68,4 +50,6 @@
   </div>
 </div>
 
-<script src="/js/add-dish.js"></script>
+<script src="/js/add-recipe.js"></script>
+
+

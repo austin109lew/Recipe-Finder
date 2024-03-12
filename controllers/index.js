@@ -1,9 +1,8 @@
-const router = require('express').Router();
+// controllers/index.js
+const authController = require('./authcontroller');
+const recipeController = require('./recipecontroller');
 
-const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
-
-router.use('/', homeRoutes);
-router.use('/api', apiRoutes);
-
-module.exports = router;
+module.exports = {
+  authController,
+  recipeController
+};
